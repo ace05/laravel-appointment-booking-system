@@ -1,0 +1,58 @@
+/*!
+ * Vali Admin
+ * Author: Pratik Borsadiya
+ * ================================*/
+
+// 1 - TOOLS
+//---------------------------------------------------
+
+// This files are essential for the theme
+@import 'admin/fonts';
+@import 'admin/vars';
+@import 'admin/customize-bootstrap';
+@import 'bootstrap/bootstrap';
+
+// Vendor plugin files 
+// Can be excluded based on your needs
+@import 'admin/sweetalert';
+
+// 2 - BASICS
+//---------------------------------------------------
+
+// This styles are essential for theme
+@import 'admin/app';
+@import 'admin/helpers';
+
+// 3 - Component
+//---------------------------------------------------
+
+@import 'admin/header';
+@import 'admin/sidebar';
+@import 'admin/sidebar-mini';
+
+// This styles are optional based on your preferance
+@import 'admin/dropdown';
+@import 'admin/button';
+@import 'admin/app-title';
+@import 'admin/tile';
+@import 'admin/toggle-button';
+@import 'admin/material-half-bg';
+@import 'admin/material-loader';
+@import 'admin/button-spinner';
+@import 'admin/widgets';
+@import 'admin/chat';
+
+// Include the following style if you need RTL support
+// Also you will need to add dir="rtl" attribute to HTML tag
+
+//@import '3-component/rtl';
+
+// 4 -Pages
+//---------------------------------------------------
+
+// This styles are optional based on your preferance
+@import 'admin/login-material';
+@import 'admin/error-page';
+@import 'font-awesome-4.7.0/scss/font-awesome';
+@import 'summernote/summernote-bs4';
+@import 'datepicker/bootstrap-datepicker.css';

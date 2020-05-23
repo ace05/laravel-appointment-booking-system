@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>City Based Local Service Appointment Booking System</title>
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;City Based Local Service Appointment Booking System&rdquo; Documentation by &ldquo;Buymeadrinks&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;City Based Local Service Appointment Booking System&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					By: Buymeadrinks<br>
+					Email: <a href="mailto:buymeadrinksonline@gmail.com">buymeadrinksonline@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#requirement">Requirements</a></li>
+			<li><a href="#installation">Installation</a></li>
+		</ol>
+		
+		<hr>
+
+		<h3 id="requirement"><strong>A) Requirements</strong> - <a href="#toc">top</a></h3>
+
+		<ul>
+			<li>PHP >=7.1.3</li>
+			<li>Laravel 5.7.*</li>
+			<li>PDO PHP Extension </li>
+			<li>Mbstring PHP Extension</li>
+			<li>Tokenizer PHP Extension</li>
+			<li>XML PHP Extension</li>
+			<li>Ctype PHP Extension</li>
+			<li>JSON PHP Extension</li>
+			<li>BCMath PHP Extension</li>
+			<li>GD PHP Extension</li>
+			<li>Curl PHP Extension</li>
+			<li>MySQL 5.5</li>
+			<li>Composer 1.4.1</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="installation"><strong>B) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<p>Script based on Laravel framework so it utilizes Composer to manage its dependencies. So, before goto the installation, make sure you have Composer installed on your machine.</p>
+		<p> 
+			Ref: <a href="https://getcomposer.org/doc/00-intro.md" target="_blank">https://getcomposer.org/doc/00-intro.md</a> 
+		</p>
+
+		<h4><strong><u>Steps:</u></strong></h4>
+
+		<div class="prepend-1">
+
+			<div class="step1 margin-bottom-25">
+				<span> <strong>Step 1:</strong> Extract source files and put it to root directory then do the composer installation by following commands</span>
+				<pre>
+					<div class="code-area">
+<span>composer install</span>
+					</div>					
+				</pre>
+			</div>
+
+			<div class="step2">
+				<span> <strong> Step 2: </strong> Following directories require 777 permission</span>
+				<ul class="italic-strong prepend-1">
+					<li>storage/</li>
+					<li>bootstrap/cache/</li>
+					<li>public/uploads/</li>
+				</ul>
+			</div>
+
+			<div class="step3 margin-bottom-25">
+				<span> 
+					<strong> Step 3: </strong> 
+					Create database on mysql <span class="italic-strong">ex: service_appointment_booking</span> 
+				</span>
+			</div>
+
+			<div class="step4">
+				<span> 
+					<strong> Step 4: </strong> 
+					Also you can see configuration files in root directory
+				</span>
+				<ul class="style-none prepend-1">
+					<li><span class="italic-strong">.env </li>
+				</ul> 	
+			</div>
+
+			<div class="step5">
+				<span> 
+					<strong> Step 5: </strong> 
+					Application Configuration Details
+				</span>
+
+				<ul class="style-none prepend-1">
+					<li>
+						<span> Setting Environment of the application </span><br>
+						<span class="italic-strong prepend-1">APP_ENV=local or production or testing </span>
+					</li>
+					<li>
+						<span> Encryption key used for encryption </span><br>
+						<span class="italic-strong prepend-1"> APP_KEY=base64:25ZKWxgEyKDX1HQ2Jdqyk+GECcz0U0Tlx89M0H7SN8I=</span>
+					</li>
+					<li>
+						<span> Application URL </span><br>
+						<span class="italic-strong prepend-1"> APP_URL= <a>http://localhost</a> </span>	
+					</li>
+					<li>
+						<span> Application Timezone </span><br>
+						<span class="italic-strong prepend-1"> APP_TIMEZONE=Asia/Kolkata </span>		
+					</li>
+				</ul>
+			</div>
+
+			<div class="step6">
+				<span> 
+					<strong> Step 6: </strong> Database Configuration Details 
+				</span> <br>
+				<span class="prepend-2"> <strong>Note:</strong> Right now we are supporting only MySQL </span>
+				<ul class="style-none prepend-3">
+					<li class="italic-strong"> DB_CONNECTION=mysql </li>
+					<li class="italic-strong"> DB_HOST=127.0.0.1  </li>
+					<li class="italic-strong"> DB_PORT=3306 </li>
+					<li class="italic-strong"> DB_DATABASE=service_appointment_booking </li>
+					<li class="italic-strong"> DB_USERNAME=root </li>
+					<li class="italic-strong"> DB_PASSWORD=mysql </li>
+				</ul> 
+			</div>
+
+			<div class="step7">
+				<span> 
+					<strong> Step 7: </strong> Cache/Session/Queue Driver settings 
+				</span>
+				<ul class="style-none prepend-1">
+					<li> 
+						<span class="italic-strong"> CACHE_DRIVER=memcached </span>&nbsp; 
+						(Supported: "file", "database", "apc", "memcached", "redis", "array")
+ 					</li>
+ 					<li> 
+						<span class="italic-strong"> SESSION_DRIVER=memcached </span>&nbsp; 
+						(Supported: "file", "cookie", "database", "apc", "memcached", "redis", "array") 
+ 					</li>
+ 					<li> 
+						<span class="italic-strong"> QUEUE_DRIVER=sync </span>&nbsp; 
+						 (Supported: "sync", "database", "beanstalkd", "sqs", "redis")
+ 					</li>	
+				</ul> 
+			</div>
+
+			<div class="step8">
+				<span> 
+					<strong> Step 8: </strong> If you using redis driver then you must specify the configuration like below 
+				</span>
+				<ul class="style-none prepend-1">
+					<li class="italic-strong"> REDIS_HOST=127.0.0.1 </li>
+					<li class="italic-strong"> REDIS_PASSWORD=null  </li>
+					<li class="italic-strong"> REDIS_PORT=6379 </li>				
+				</ul> 
+			</div>
+
+			<div class="step9 margin-bottom-25">
+				<span> 
+					<strong> Step 9: </strong> 
+					Then you need to run database migration
+<pre>
+php artisan migrate
+php artisan db:seed
+</pre>
+				</span>
+			</div>
+
+			<div class="step10 margin-bottom-25">					
+				<p> 
+					<strong> Step 10: </strong> Once done, Then we need to configure application with web server.  
+				</p>
+				<div class="prepend-2">
+					<p class="italic-strong-underline"> Apache Virtual Host Configuration </p>
+					<p class="prepend-2">
+						<strong>Note:</strong> <i> Apache mod_rewrite is required </i>
+ 					</p>
+ 					<div class="prepend-2 margin-bottom-25">
+
+ 						<span> Install Laravel framework windows xampp <br>
+		 					<a class="prepend-2" href="https://www.codementor.io/magarrent/how-to-install-laravel-5-xampp-windows-du107u9ji" target=_blank>
+		 							https://www.codementor.io/magarrent/how-to-install-laravel-5-xampp-windows-du107u9ji 
+		 					</a>
+		 				</span>	
+	 					
+	 					<span> Install  Laravel framework Ubuntu <br>
+		 					<a class="prepend-2" href="https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-16-04" target=_blank>
+		 					https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-16-04	 
+		 					</a>
+	 					</span>	
+ 					</div>	
+				</div> 
+				<div class="prepend-2">
+					<p class="italic-strong-underline"> Nginx Configuration </p>
+					<span class="prepend-2">
+						Edit site config file /etc/nginx/sites-available/default and update the following configuration 
+ 					</span>
+
+						<pre class="code-container">
+server { 
+  listen 80 default_server; 
+  listen [::]:80 default_server ipv6only=on; 
+  root source_path; (ex: /usr/share/nginx/html/service-abs/public/) 
+  index index.php index.html index.htm; 
+  server_name server_domain_or_IP; 
+  location / {	 
+    try_files $uri $uri/ /index.php?$query_string; 
+  }
+
+  location ~ \.php$ {
+    try_files $uri /index.php =404;  
+    fastcgi_split_path_info ^(.+\.php)(/.+)$;  
+    fastcgi_pass unix:/var/run/php5-fpm.sock;  
+    fastcgi_index index.php; 
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; 
+    include fastcgi_params; 
+    try_files $uri $uri/ /index.php?$query_string; 
+  }
+}						
+						</pre>
+						<span> Then restart the nginx server </span>
+	
+				</div>
+			</div>
+			<div class="step11 margin-bottom-25">
+				<p> 
+					<strong> Step 11: </strong> After all these setups done. You start application login setup. 
+					<pre>http://{domain}/install</pre>
+				</p>	 
+			</div>
+
+		</div>
+
+
+		<hr>
+		
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

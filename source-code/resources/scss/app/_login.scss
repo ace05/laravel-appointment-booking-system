@@ -1,0 +1,62 @@
+.card-signin {
+  border: 0;
+  overflow: hidden;
+  background-color:#fff;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .card-body {
+    padding: 2rem;
+  }
+}
+.form-signin {
+  width: 100%;
+  .btn {
+    transition: all 0.2s;
+    &:hover {
+        color:#ffffff;
+    }
+  }
+}
+
+.login-or {
+  position: relative;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+.hr-or {
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+
+.btn-linkedin{
+  color:white;
+  background-color:#007bb6;
+}
